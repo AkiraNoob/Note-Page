@@ -1,0 +1,64 @@
+.introduction {
+  @include size(100%);
+
+  &--flex {
+    @include flex_center("column");
+    gap: 2.5rem;
+  }
+
+  &--margin {
+    @include mset4($value1: 8rem);
+  }
+
+  &__img {
+    &--round {
+      @include size(auto, auto);
+    }
+
+    &--mod {
+      @include size(12rem, 12rem);
+      border-radius: 100%;
+      object-fit: fill;
+    }
+  }
+
+  &__text {
+    line-height: 2rem;
+    
+    &--center {
+      @include flex_center("column");
+      gap: 2.5rem;
+      text-align: center;
+    }
+
+    &--pm {
+      @include mset();
+    }
+    
+    &--head {
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+    
+    &--body {
+      font-size: 1.3rem;
+    }
+
+    &--foot {
+      font-size: 1.7rem;
+    }
+  }
+
+  &__social {
+    @include flex_center("row");
+    gap: 1.5rem;
+
+    &--fb {
+      font-size: 2.3rem;
+    }
+
+    &--ins {
+      font-size: 2.5rem;
+    }
+  }
+}

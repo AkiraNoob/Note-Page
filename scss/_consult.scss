@@ -1,0 +1,59 @@
+.consult {
+  @include size();
+  &__title {
+    font-size: 1.5rem;
+    text-align: center;
+    @include mset4($value3: 5rem);
+  }
+
+  &__container {
+    @include sizeImportant(auto, auto);
+    
+    &__element {
+      &:nth-child(1) {
+        @include mset4($value3: 10rem);
+      }
+
+      &:nth-child(2) {
+        @include mset4($value3: 10rem);
+      }
+
+      &__tag {
+        text-align: center;
+        font-size: 1.7rem;
+        @include mset4($value3: 2rem);
+      }
+
+      &__grid {
+        position: relative;
+        @include sizeImportant(auto, auto);
+        display: flex;
+        justify-content: center;
+        @include mset4($value3: 5rem);
+
+        a {
+          @include mset2($value2: 1rem);
+          border-radius: 2%;
+        }
+
+        &--block {
+          @include sizeImportant();
+          border-radius: 2%;
+          overflow: hidden;
+
+          img {
+            @include sizeImportant();
+            border-radius: 2%;
+            transition: 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          }
+
+          &:hover {
+            img {
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+    }
+  }
+}

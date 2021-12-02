@@ -1,0 +1,61 @@
+.slick__consult__arrow {
+  position: absolute;
+  cursor: pointer;
+  @include pset2($value1: 10px);
+  font-size: 2rem;
+  width: 50px;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  line-height: 1;
+  transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 2;
+
+  .fas {
+    transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  &:hover {
+    background-color: $textSecondaryColor;
+    
+    .fas {
+      color: $bodyPrimaryColor;
+    }
+  }
+}
+
+.slick__consult__prev {
+  top: 50%;
+  left: -70px;
+  transform: translateY(-50%);
+  border-radius: 50% 2% 2% 50%;
+}
+
+.slick__consult__next {
+  top: 50%;
+  right: -70px;
+  transform: translateY(-50%);
+  border-radius: 2% 50% 50% 2%;
+}
+
+.slick__consult__dots {
+  position: absolute;
+  @include flex_center();
+  @include pset();
+  font-size: 0;
+  gap: 1rem;
+  bottom: -2.5rem;
+
+  button {
+    @include size(15px, 15px);
+    border-radius: 100%;
+    border: 1px solid #dddddd;
+    background-color: #dddddd;
+    transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+}
+
+.slick-active button {
+  background-color: #202023;
+}

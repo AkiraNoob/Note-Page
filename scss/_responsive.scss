@@ -1,0 +1,131 @@
+// BUG IGNORE 15px FROM MAX_WIDTH
+
+/* width: 1814px - 15px  */
+@media screen and (max-width: 1814px) {
+  $bodyLeftRightPadding: 28rem;
+
+  body {
+    padding: 0 $bodyLeftRightPadding;
+
+    .nav {
+      inset: 0 calc($bodyLeftRightPadding - 7px);
+    }
+  }
+}
+
+/* width: 1714px - 15px  */
+@include setResponsive(1714px, 26.5rem, 8.5rem);
+
+/* width: 1615px - 15px  */
+@include setResponsive(1615px, 24.5rem, 7.5rem);
+
+/* width: 1545px - 15px  */
+@include setResponsive(1545px, 23rem, 6.8rem);
+
+/* width: 1445px - 15px  */
+@include setResponsive(1445px, 20rem, 6.8rem);
+
+/* width: 1315px - 15px  */
+@include setResponsive(1315px, 15rem, 6.3rem);
+
+/* width: 1215px - 15px  */
+@include setResponsive(1215px, 12rem, 6.3rem);
+
+/* width: 1115px - 15px  */
+@include setResponsive(1115px, 9rem, 7rem);
+
+/* width: 950px - 15px  */
+@include setResponsive(950px, 6rem, 6.8rem) {
+  .slick__consult {
+    &__arrow {
+      font-size: 1.5rem;
+    }
+    &__dots {
+      button {
+        @include sizeImportant(1rem, 1rem);
+      }
+    }
+  }
+
+  .nav {
+    &__navigation {
+      @include pset4($value4: 30px);
+    }
+  }
+}
+
+/* width: 615px- 15px */
+@include setResponsive(615px, 2rem, 6rem) {
+  .nav {
+    grid-template-columns: 2fr 1fr;
+    @include pset2($value2: 1rem);
+
+    &__home {
+      display: initial !important;
+    }
+
+    &__navigation {
+      display: none;
+    }
+
+    &__mode {
+      justify-content: initial;
+
+      &__btn2 {
+        visibility: visible;
+        right: 10%;
+      }
+      
+      &__menu {
+        right: 10%;
+      }
+    }
+  }
+}
+
+/* width: 432px - 15px */
+@include setResponsive(430px, 2rem, 6rem) {
+  .nav {
+    &__mode {
+      button {
+        @include size(35px, 35px);
+      }
+
+      &__btn1 {
+        left: 10px;
+      }
+
+      &__btn2 {
+        visibility: visible;
+        right: 10px;
+      }
+
+      &__menu {
+        right: 10px;
+      }
+    }
+  }
+}
+
+/* width: 432px - 15px */
+@include setResponsive(360px, 2rem, 6rem) {
+  .nav {
+    &__mode {
+      button {
+        @include size(35px, 35px);
+      }
+
+      &__btn1 {
+        left: 3px;
+      }
+
+      &__btn2 {
+        visibility: visible;
+        right: 0px;
+      }
+      &__menu {
+        right: 0;
+      }
+    }
+  }
+}

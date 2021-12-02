@@ -1,0 +1,58 @@
+@import "./variables";
+@import "./mixin";
+* {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.fas,
+.fab {
+  color: $textPrimaryColor;
+}
+
+i {
+  @include mset();
+  @include pset();
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+// header {
+//   position: relative;
+//   @include size(auto, auto);
+// }
+
+body {
+  background-color: $bodyPrimaryColor;
+  padding: 0rem $bodyLeftRightPadding;
+  font-family: "Ubuntu", sans-serif;
+  overflow-x: hidden;
+}
+
+.dividers {
+  &--margin {
+    @include mset2($value1: 4.5rem);
+  }
+}
+
+@import "./menu";
+@import "./nav";
+@import "./introduction";
+@import "./note";
+@import "./slick_scss/slick_note";
+@import "./slick_scss/slick";
+@import "./consult";
+@import "./slick_scss/slick_consult";
+@import "./toggleMode";
+@import "./responsive";

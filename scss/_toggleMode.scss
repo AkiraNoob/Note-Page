@@ -1,0 +1,97 @@
+.light_mode {
+  background-color: $bodyLightModeColor !important;
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  span {
+    color: $textLightModeColor !important;
+  }
+
+  .slick-vertical .slick-slide {
+    border: 1px solid $bodyPrimaryColor !important;
+  }
+
+  .slick__note__arrow {
+    border: 1px solid $bodyPrimaryColor !important;
+
+    &:hover {
+      background-color: #6b6b6e !important;
+
+      .fa-chevron-down,
+      .fa-chevron-up {
+        color: #eee !important;
+      }
+    }
+    
+    .fa-chevron-down,
+    .fa-chevron-up {
+      color: $textLightModeColor !important;
+    }
+  }
+
+  .slick__note__dots button {
+    background-color: #eee;
+    border: 1px solid $bodyPrimaryColor;
+  }
+
+  .slick-active button {
+    background-color: #6b6b6e !important;
+  }
+
+
+  .slick__consult__dots button {
+    border: 1px solid #6b6b6e;
+  }
+
+  .slick__consult__arrow {
+    .fas {
+      color: $bodyPrimaryColor;
+    }
+
+    &:hover {
+      background-color: #6b6b6e !important;
+
+      .fas {
+        color: #eee !important;
+      }
+    }
+  }
+
+  .nav {
+    background-color: $bodyLightModeColor;
+
+    &__home__link__img {
+      color: $textLightModeColor;
+    }
+
+    &__navigation__link__text::before {
+      background-color: $textLightModeColor;
+    }
+  }
+
+  .introduction {
+    &__img--mod {
+      border: 1px solid $textLightModeColor !important;
+    }
+
+    &__social {
+      &--fb,
+      &--ins {
+        color: $textLightModeColor !important;
+      }
+    }
+  }
+
+  .note__elements__card:hover {
+    background-color: #6b6b6e !important;
+
+    .note__elements__card__text {
+      color: $bodyLightModeColor !important;
+    }
+  }
+}

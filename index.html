@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Note Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./assest/css/normalize.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8c4bcaaa91.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css" />
+    <link href="./assest/css/app.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav__home">
+            <a class="nav__home__link" href="#">
+                <i class="fas fa-dragon nav__home__link__img"></i>
+                <p class="nav__home__link__text">Home</p>
+            </a>
+        </div>
+        <div class="nav__navigation">
+            <a class="nav__navigation__link" href="#note">
+                <p class="nav__navigation__link__text">Note</p>
+            </a>
+            <a class="nav__navigation__link" href="#consult">
+                <p class="nav__navigation__link__text">Consult</p>
+            </a>
+        </div>
+        <div class="nav__mode">
+            <button class="nav__mode__btn1 nav__mode__btn1--lightmode"><i class="fas fa-sun"></i></button>
+            <button class="nav__mode__btn1 nav__mode__btn1--darkmode"><i class="fas fa-moon"></i></button>
+            <button class="nav__mode__btn2"><i class="fas fa-bars"></i></button>
+            <div class="nav__mode__menu">
+                <div class="nav__mode__menu__navigation">
+                    <a class="nav__mode__menu__navigation__link" href="#note">
+                        <p class="nav__mode__menu__navigation__link__text">Note</p>
+                    </a>
+                    <a class="nav__mode__menu__navigation__link" href="#consult">
+                        <p class="nav__mode__menu__navigation__link__text">Consult</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="introduction introduction--flex introduction--margin">
+        <div class="introduction__img introduction__img--round">
+            <img src="./assest/img/avatar.jpg" class="introduction__img--mod">
+        </div>
+        <div class="introduction__text introduction__text--center">
+            <h1 class="introduction__text--head introduction__text--pm">Hi! I am Nguyen
+                Duc Phuong</h1>
+            <p class="introduction__text--body introduction__text--pm">
+                I am an student at University of Information and my major is Software Engineer. <br>This is my own web
+                to take note whatever I think is important.
+            </p>
+            <h2 class="introduction__text--foot introduction__text--pm">Enjoy!</h2>
+        </div>
+        <div class="introduction__social">
+            <a href="#"><i class="introduction__social--fb fab fa-facebook"></i></a>
+            <a href="#"><i class="introduction__social--ins fab fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <hr id="note" class="dividers dividers--margin">
+
+    <section class="note">
+        <div class="note__title">
+            <h1>Memory Note</h1>
+        </div>
+        <div class="note__elements">
+            <a href="https://codepen.io/uahnbu" class="note__elements__card" target="_blank">
+                <p class="note__elements__card__text">Some of nice design of uahnbu like navigation, SVG animation,...
+                </p>
+            </a>
+            <a href="#" class="note__elements__card" target="_blank">
+                <p class="note__elements__card__text">Another note, not know what will note hear, i will update later
+                    cause it look like my own notion</p>
+            </a>
+            <a href="#" class="note__elements__card" target="_blank">
+                <p class="note__elements__card__text">Note here note here note here, will change the href attribute later. Here some randome text to make this sample look more alive, this is my project</p>
+            </a>
+            <a href="#" class="note__elements__card" target="_blank">
+                <p class="note__elements__card__text">Have my own notion for write documeny</p>
+            </a>
+            <a href="#" class="note__elements__card" target="_blank">
+                <p class="note__elements__card__text">Lorem ipsum dolor sit, nah not a lorem again.</p>
+            </a>
+            <a href="#" class="note__elements__card" target="_blank">
+                <p class="note__elements__card__text">Now it's Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Similique veniam fugit, laboriosam pariatur aperiam doloribus omnis reiciendis! Consequuntur ad
+                    iste, voluptas error aliquid maiores quisquam nemo! Similique aspernatur velit odit.</p>
+            </a>
+            <a href="#" class="note__elements__card" target="_blank">
+                <p class="note__elements__card__text">also lorem but shorter</p>
+            </a>
+            <a href="#" class="note__elements__card" target="_blank">
+                <p class="note__elements__card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Similique veniam fugit, laboriosam pariatur aperiam doloribus omnis reiciendis! Consequuntur ad
+                    iste, voluptas error aliquid maiores quisquam nemo! Similique aspernatur velit odit.</p>
+            </a>
+        </div>
+    </section>
+
+    <hr id="consult" class="dividers dividers--margin">
+
+    <section class="consult">
+        <div class="consult__title">
+            <h1>Consult Resources</h1>
+        </div>
+        <div class="consult__container">
+            <div class="consult__container__element">
+                <div class="consult__container__element__tag">
+                    <p>English Consult</p>
+                </div>
+                <div class="consult__container__element__grid">
+                    <a target="_blank" href="https://www.freecodecamp.org/learn">
+                        <div class="consult__container__element__grid--block">
+                            <img src="assest/img/freecodecamp.png">
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.w3schools.com">
+                        <div class="consult__container__element__grid--block">
+                            <img src="assest/img/w3school.png">
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://developer.mozilla.org/en-US/">
+                        <div class="consult__container__element__grid--block">
+                            <img src="assest/img/MDNwebdocs.png">
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://stackoverflow.com">
+                        <div class="consult__container__element__grid--block">
+                            <img src="assest/img/stackoverflow.jpg">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="consult__container__element">
+                <div class="consult__container__element__tag">
+                    <p>Vietnamese Consult</p>
+                </div>
+                <div class="consult__container__element__grid">
+                    <a target="_blank" href="https://codelearn.io">
+                        <div class="consult__container__element__grid--block">
+                            <img src="assest/img/codelearn.png">
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://fullstack.edu.vn">
+                        <div class="consult__container__element__grid--block">
+                            <img src="assest/img/f8.png">
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://evondev.com">
+                        <div class="consult__container__element__grid--block">
+                            <img src="assest/img/evondev.jpg">
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://viblo.asia/newest">
+                        <div class="consult__container__element__grid--block">
+                            <img src="assest/img/viblo.png">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="consult__container__element">
+                <div class="consult__container__element__tag">
+                    <p>Blog (both EN and VN)</p>
+                </div>
+                <div class="consult__container__element__grid">
+                    <a target="_blank" href="https://toidicodedao.com">
+                        <div class="consult__container__element__grid--block">
+                            <img src="assest/img/toidicodedao.jpg">
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://codeaholicguy.com">
+                        <div class="consult__container__element__grid--block">
+                            <img src="assest/img/codeholicguy.jpg">
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://simpleprogrammer.com">
+                        <div class="consult__container__element__grid--block">
+                            <img src="assest/img/simpleprogrammer.jpg">
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://blog.codinghorror.com">
+                        <div class="consult__container__element__grid--block">
+                            <img src="assest/img/codinghorror.jpg">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
+    <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./assest/js/slide.js"></script>
+    <script type="text/javascript" src="./assest/js/nav_darklight_mode.js"></script>
+    <script type="text/javascript" src="./assest/js/menu_toggle.js"></script>
+</body>
+
+</html>

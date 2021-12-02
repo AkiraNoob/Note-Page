@@ -1,0 +1,134 @@
+// set the size of an element
+@mixin size($value1: 100%, $value2: 100%) {
+  width: $value1;
+  height: $value2;
+}
+@mixin sizeImportant($value1: 100%, $value2: 100%) {
+  width: $value1 !important;
+  height: $value2 !important;
+}
+
+@mixin sizeSameHeightAndWidth($value) {
+  width: $value;
+  height: $value;
+}
+@mixin sizeSameHeightAndWidthImportant($value) {
+  width: $value !important;
+  height: $value !important;
+}
+
+@mixin flex_center($value: "row") {
+  @if $value == row {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  } @else {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+@mixin flexModify($value1, $value2, $value3) {
+  display: flex;
+  justify-content: $value1;
+  align-items: $value2;
+  flex-wrap: $value3;
+}
+//set margin
+@mixin mset($value: 0) {
+  margin-top: $value;
+  margin-right: $value;
+  margin-bottom: $value;
+  margin-left: $value;
+}
+@mixin mset2($value1: 0, $value2: 0) {
+  margin-top: $value1;
+  margin-right: $value2;
+  margin-bottom: $value1;
+  margin-left: $value2;
+}
+@mixin mset3($value1: 0, $value2: 0, $value3: 0) {
+  margin-top: $value1;
+  margin-right: $value2;
+  margin-bottom: $value3;
+  margin-left: $value2;
+}
+@mixin mset4($value1: 0, $value2: 0, $value3: 0, $value4: 0) {
+  margin-top: $value1;
+  margin-right: $value2;
+  margin-bottom: $value3;
+  margin-left: $value4;
+}
+
+//set padding
+@mixin pset($value: 0) {
+  padding-top: $value;
+  padding-right: $value;
+  padding-bottom: $value;
+  padding-left: $value;
+}
+@mixin pset2($value1: 0, $value2: 0) {
+  padding-top: $value1;
+  padding-right: $value2;
+  padding-bottom: $value1;
+  padding-left: $value2;
+}
+@mixin pset3($value1: 0, $value2: 0, $value3: 0) {
+  padding-top: $value1;
+  padding-right: $value2;
+  padding-bottom: $value3;
+  padding-left: $value2;
+}
+@mixin pset4($value1: 0, $value2: 0, $value3: 0, $value4: 0) {
+  padding-top: $value1;
+  padding-right: $value2;
+  padding-bottom: $value3;
+  padding-left: $value4;
+}
+
+@mixin absoluteCenter() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin absolute($value1: 0, $value2: 0, $value3: 0, $value4: 0) {
+  position: absolute;
+  top: $value1;
+  right: $value2;
+  bottom: $value3;
+  left: $value4;
+}
+
+// only responsive for this project
+@mixin setResponsive($value1, $value2, $value3) {
+  @media screen and (max-width: $value1) {
+    $bodyLeftRightPadding: $value2;
+
+    body {
+      padding: 0 $bodyLeftRightPadding;
+
+      .nav {
+        inset: 0 calc($bodyLeftRightPadding - 7px);
+      }
+
+      .consult {
+        &__container {
+          &__element {
+            &:nth-child(1),
+            &:nth-child(2) {
+              @include mset4($value3: $value3);
+            }
+          }
+        }
+      }
+      
+      @content;
+    }
+  }
+}
